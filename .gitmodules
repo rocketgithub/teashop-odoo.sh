@@ -1,0 +1,20 @@
+[submodule "fel_g4s"]
+	path = fel_g4s
+	url = git@github.com:rocketgithub/fel_g4s.git
+	branch = 13.0
+[submodule "fel_gt"]
+	path = fel_gt
+	url = git@github.com:rocketgithub/fel_gt.git
+	branch = 13.0
+[submodule "l10n_gt_extra"]
+	path = l10n_gt_extra
+	url = git@github.com:rocketgithub/l10n_gt_extra.git
+	branch = 13.0
+[submodule "pos_fel"]
+	path = pos_fel
+	url = git@github.com:rocketgithub/pos_fel.git
+	branch = 13.0
+[submodule "pos_gt"]
+	path = pos_gt
+	url = git@github.com:rocketgithub/pos_gt.git
+	branch = 13.0
