@@ -17,3 +17,6 @@
 	path = fel_g4s
 	url = git@github.com:rocketgithub/fel_g4s.git
 	branch = 13.0
+[submodule "payment_visanet"]
+	path = payment_visanet
+	url = git@github.com:rocketgithub/payment_visanet.git
