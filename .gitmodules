@@ -21,3 +21,6 @@
 [submodule "payment_visanet"]
 	path = payment_visanet
 	url = git@github.com:rocketgithub/payment_visanet.git
+[submodule "pos_restaurant_extra"]
+	path = pos_restaurant_extra
+	url = git@github.com:rocketgithub/pos_restaurant_extra.git
