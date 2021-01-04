@@ -24,3 +24,6 @@
 [submodule "pos_restaurant_extra"]
 	path = pos_restaurant_extra
 	url = git@github.com:rocketgithub/pos_restaurant_extra.git
+[submodule "teashop_gt"]
+	path = teashop_gt
+	url = git@github.com:rocketgithub/teashop_gt.git
