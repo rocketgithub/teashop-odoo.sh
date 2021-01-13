@@ -5,7 +5,6 @@
     'name': 'POS Fel 58mm Ticket',
     'version': '1.0',
     'category': 'Point of Sale',
-    'author': 'Juan Carlos Guzman - Piensom',
     'summary': 'Ticket de 58mm para Punto de Venta con FEL',
     'description': """
 
