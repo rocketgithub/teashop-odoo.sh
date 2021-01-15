@@ -159,7 +159,7 @@
             <div class="pos-receipt" style="font-size: 190%; zoom: 90%; position: relative; left: 1.2em">
                 <!--<t t-if="firma_fel || order.get_paymentlines().length == 0">-->
                 <t>
-                    <div style='text-align:center;width:200px'>
+                    <div style='text-align:center;'>
                         <t t-esc="widget.pos.config.name"/><br/>
                         <br/>
                         <t t-if='receipt.company.logo'>
@@ -188,7 +188,7 @@
                         Número: <t t-esc="numero_fel || ''"/><br/>
                     </t>
                     <br/>
-                    <div class="datos_factura" style='width:200px'>
+                    <div class="datos_factura">
                         Fecha: <t t-esc="order.formatted_validation_date"/><br/>
                         Empleado: <t t-esc="widget.pos.get_cashier().name"/><br/>
                         <br/>
