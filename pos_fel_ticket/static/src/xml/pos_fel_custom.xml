@@ -4,8 +4,8 @@
         <t t-jquery=".pos-receipt" t-operation="replace">
             <t t-if="widget.pos.company.id == 2">
             <div class="pos-receipt" style="font-size: 190%; zoom: 90%;width: 219px">
-                <!--<t t-if="firma_fel || order.get_paymentlines().length == 0">-->
-                <t>
+                <t t-if="firma_fel || order.get_paymentlines().length == 0">
+                <!--<t>-->
                     <div style='text-align:center;width:200px;font-size:14px'>
                         <t t-esc="widget.pos.config.name"/><br/>
                         <br/>
@@ -159,8 +159,8 @@
         </t>
         <t t-else="">
             <div class="pos-receipt" style="font-size: 190%; zoom: 90%; position: relative; left: 1.2em">
-                <!--<t t-if="firma_fel || order.get_paymentlines().length == 0">-->
-                <t>
+                <t t-if="firma_fel || order.get_paymentlines().length == 0">
+                <!--<t>-->
                     <div style='text-align:center;'>
                         <t t-esc="widget.pos.config.name"/><br/>
                         <br/>
