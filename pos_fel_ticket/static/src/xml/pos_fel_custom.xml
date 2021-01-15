@@ -174,7 +174,7 @@
                             <br/>
                         </t>
                     </div>   
-                    <div style='text-align:center;width:200px'>
+                    <div style='text-align:center;'>
                         <t t-if="widget.pos.invoice_journal_address">
                             <t t-esc="widget.pos.invoice_journal_address.name"/><br/>
                             <t t-esc="widget.pos.invoice_journal_address.street"/><br/>
@@ -196,7 +196,7 @@
                         Nombre: <t t-esc="order.get_client().name"/><br/>
                         Dirección: <t t-esc="order.get_client().street"/><br/><br/>
                     </div>
-                    <div style='width:200px'>
+                    <div>
                         <table class='receipt-orderlines'>
                             <colgroup>
                                 <col width='30%' />
