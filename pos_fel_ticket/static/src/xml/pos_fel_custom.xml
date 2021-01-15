@@ -6,7 +6,7 @@
             <div class="pos-receipt" style="font-size: 190%; zoom: 90%;width: 219px">
                 <!--<t t-if="firma_fel || order.get_paymentlines().length == 0">-->
                 <t>
-                    <div style='text-align:center;width:200px'>
+                    <div style='text-align:center;width:200px;font-size:12px'>
                         <t t-esc="widget.pos.config.name"/><br/>
                         <br/>
                         <t t-if='receipt.company.logo'>
@@ -21,7 +21,7 @@
                             <br/>
                         </t>
                     </div>   
-                    <div style='text-align:center;width:200px'>
+                    <div style='text-align:center;width:200px;font-size:12px'>
                         <t t-if="widget.pos.invoice_journal_address">
                             <t t-esc="widget.pos.invoice_journal_address.name"/><br/>
                             <t t-esc="widget.pos.invoice_journal_address.street"/><br/>
@@ -35,7 +35,7 @@
                         Número: <t t-esc="numero_fel || ''"/><br/>
                     </t>
                     <br/>
-                    <div class="datos_factura" style='width:200px'>
+                    <div class="datos_factura" style='width:200px;font-size:12px'>
                         Fecha: <t t-esc="order.formatted_validation_date"/><br/>
                         Empleado: <t t-esc="widget.pos.get_cashier().name"/><br/>
                         <br/>
@@ -43,7 +43,7 @@
                         Nombre: <t t-esc="order.get_client().name"/><br/>
                         Dirección: <t t-esc="order.get_client().street"/><br/><br/>
                     </div>
-                    <div style='width:200px'>
+                    <div style='width:200px;font-size:12px'>
                         <table class='receipt-orderlines'>
                             <colgroup>
                                 <col width='30%' />
