@@ -142,8 +142,10 @@
                         NIT: 95189416<br/>
                     </t>
                     <t t-if="firma_fel">
-                        Autorización: <t t-esc="firma_fel || ''"/><br/>
-                        Fecha Certificación: <t t-esc="order.formatted_validation_date"/>
+                        Autorización: <br/>
+                        <t t-esc="firma_fel || ''"/><br/>
+                        Fecha Certificación: <br/>
+                        <t t-esc="order.formatted_validation_date"/><br/>
                     </t>
                     <t t-esc="order.name"/><br/>
                     <t t-if="receipt.footer">
