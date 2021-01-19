@@ -92,10 +92,10 @@
                         </tr>
                     </table>
                     <br/>
-                    <table class='receipt-paymentlines' style='font-size:14px'>
+                    <table class='receipt-paymentlines' style='font-size:12px'>
                         <t t-foreach="paymentlines" t-as="line">
                             <colgroup>
-                                <col width='40%' />
+                                <col width='20%' />
                                 <col width='40%' />
                             </colgroup>
                             <tr>
