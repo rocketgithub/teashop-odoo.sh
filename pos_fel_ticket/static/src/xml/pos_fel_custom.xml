@@ -100,10 +100,10 @@
                             </colgroup>
                             <tr>
                                 <td>
-                                    <t t-esc="line.name"/>
+                                    <t t-esc="line.name"/>: <t t-esc="widget.format_currency(line.get_amount())"/>
                                 </td>
                                 <td class="pos-right-align">
-                                    <t t-esc="widget.format_currency(line.get_amount())"/>
+                                    <!--<t t-esc="widget.format_currency(line.get_amount())"/>-->
                                 </td>
                             </tr>
                         </t>
