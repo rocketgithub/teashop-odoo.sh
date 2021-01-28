@@ -121,7 +121,7 @@
                             </td>
                         </tr>
                     </table>
-                    <div style='font-size:12px'>
+                    <div style='font-size:10px'>
                     <t t-if="!certificador_fel">
                         Sujeto a pagos trimestrales ISR<br/>
                         Agente de Retención del IVA<br/>
