@@ -27,3 +27,8 @@
 [submodule "teashop_gt"]
 	path = teashop_gt
 	url = git@github.com:rocketgithub/teashop_gt.git
+
+[submodule "piensom/fel/res_address_towns"]
+	path = piensom/fel/res_address_towns
+	url = git@github.com:piensom/fel.git
+	branch = 14.0
