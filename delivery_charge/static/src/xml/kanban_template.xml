@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+
+    <t t-name="kanban_vehicle_data">
+        <div>
+            <t t-if="icon_details.brand_id">
+                <div class="col-md-6 mt8">
+                    <span class="calendar-schedule-label">Make: </span>
+                    <div>
+                        <p t-esc="icon_details.brand_id"/>
+                    </div>
+                </div>
+            </t>
+            <t t-if="icon_details.model_id">
+                <div class="col-md-6 mt8">
+                    <span class="calendar-schedule-label">Model: </span>
+                    <div>
+                        <p t-esc="icon_details.model_id"/>
+                    </div>
+                </div>
+            </t>
+            <t t-if="icon_details.license_plate">
+                <div class="col-md-6 mt8">
+                    <span class="calendar-schedule-label">License Plate: </span>
+                    <div>
+                        <p t-esc="icon_details.license_plate"/>
+                    </div>
+                </div>
+            </t>
+        </div>
+    </t>
+
+</templates>
