@@ -13,17 +13,25 @@ class DeliveryCharge(models.Model):
 			if delivery_product and record.order_line:
 				delivery_product_line = record.order_line.filtered(lambda x: x.product_id.id == delivery_product.id)
 				amount_untaxed = record.amount_untaxed - (delivery_product_line.price_total or 0)
-				if not delivery_charge_id.min_order_amount or amount_untaxed < delivery_charge_id.min_order_amount:
+				#if not delivery_charge_id.min_order_amount or amount_untaxed < delivery_charge_id.min_order_amount:
+				if amount_untaxed < delivery_charge_id.min_order_amount:
 					if delivery_product_line:
+						#delivery_product_line.price_unit = delivery_charge_id.amount_with_discount
 						delivery_product_line.price_unit = delivery_charge_id.charge
 					else:
 						record.order_line |= record.order_line.new({
 							'product_id': delivery_product.id,
-							'price_unit': delivery_charge_id.charge
+							'price_unit': 222
 						})
 				else:
 					if delivery_product_line:
-						delivery_product_line.unlink()
+						#delivery_product_line.unlink()
+						delivery_product_line.price_unit = delivery_charge_id.amount_with_discount
+					else:
+						record.order_line |= record.order_line.new({
+							'product_id': delivery_product.id,
+							'price_unit': 444
+						})	
 
 
 	def write(self, values):

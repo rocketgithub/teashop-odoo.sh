@@ -11,3 +11,4 @@ class DeliveryCharge(models.Model):
     sequence = fields.Integer('Sequence')
     charge = fields.Float('Charge')
     min_order_amount = fields.Float('Min Order Value')
+    amount_with_discount = fields.Float('Amount with discount')

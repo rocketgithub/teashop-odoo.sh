@@ -11,6 +11,7 @@
                                 <field name="name" string="Zona"/>
                                 <field name="charge" string="Monto"/>
                                 <field name="min_order_amount" string="Monto Máximo"/>
+                                <field name="amount_with_discount" string="Monto con Descuento"/>
                             </group>
                         </group>
                     </sheet>
@@ -27,6 +28,7 @@
                     <field name="name" string="Zona"/>
                     <field name="charge" string="Monto"/>
                     <field name="min_order_amount" string="Monto Máximo"/>
+                    <field name="amount_with_discount" string="Monto con Descuento"/>
                 </tree>
             </field>
         </record>
