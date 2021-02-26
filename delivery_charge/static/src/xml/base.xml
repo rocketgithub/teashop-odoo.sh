@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+
+    <t t-extend="KanbanView.Group">
+        <t t-jquery="div.o_kanban_load_more" t-operation="replace"/>
+        <t t-jquery="span.o_column_title" t-operation="before">
+            <span t-if="widget.icon" class="o_column_icon"><i t-attf-class="fa #{widget.icon}"/></span>
+        </t>
+        <t t-jquery="div.o_kanban_header" t-operation="after">
+            <div class="o_kanban_body">
+                <div t-if="widget.remaining > 0" class="o_kanban_load_more">
+                    <t t-call="KanbanView.LoadMore"/>
+                </div>
+            </div>
+        </t>
+    </t>
+
+</templates>

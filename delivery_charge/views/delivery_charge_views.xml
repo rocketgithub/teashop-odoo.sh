@@ -1,0 +1,54 @@
+<odoo>
+    <data>
+        <record id="deliver_charge_view_form" model="ir.ui.view">
+            <field name="name">delivery.charge.form</field>
+            <field name="model">delivery.charge</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" string="Zona"/>
+                                <field name="charge" string="Monto"/>
+                                <field name="min_order_amount" string="Monto Máximo"/>
+                                <field name="amount_with_discount" string="Monto con Descuento"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="delivery_charge_view_tree" model="ir.ui.view">
+            <field name="name">delivery.charge.tree</field>
+            <field name="model">delivery.charge</field>
+            <field name="arch" type="xml">
+                <tree string="Cargos de Envío" editable="bottom">
+                    <field name="sequence" widget="handle"/>
+                    <field name="name" string="Zona"/>
+                    <field name="charge" string="Monto"/>
+                    <field name="min_order_amount" string="Monto Máximo"/>
+                    <field name="amount_with_discount" string="Monto con Descuento"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_delivery_charge" model="ir.actions.act_window">
+            <field name="name">Costos de Envio</field>
+            <field name="res_model">delivery.charge</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="delivery_charge_view_tree"/>
+            <field name="help" type="html">
+                <p>
+                    Create Delivery Charges.
+                </p>
+            </field>
+        </record>
+
+        <menuitem name="Costos de Envío"
+                  id="menu_action_delivery_charge"
+                  parent="sale.sale_order_menu"
+                  action="action_delivery_charge"
+                  sequence="100"/>
+    </data>
+</odoo>

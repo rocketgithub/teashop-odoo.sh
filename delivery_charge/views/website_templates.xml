@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="address" inherit_id="website_sale.address" name="Address Management (Delivery Charge)">
+        <xpath expr="//div[@id='div_phone']" position="after">
+            <div t-attf-class="form-group #{error.get('delivery_charge_id') and 'o_has_error' or ''} col-lg-6 div_delivery_charge">
+                <label class="col-form-label" for="delivery_charge_id">Area</label>
+                <select id="delivery_charge_id" name="delivery_charge_id" t-attf-class="form-control #{error.get('delivery_charge_id') and 'is-invalid' or ''}">
+                    <option value="">Area...</option>
+                    <t t-foreach="areas" t-as="a">
+                        <option t-att-value="a.id" t-att-selected="a.id == (area and area.id or -1)">
+                            <t t-esc="a.name" />
+                        </option>
+                    </t>
+                </select>
+            </div>
+            <div class="w-100"/>
+        </xpath>
+    </template>
+</odoo>
