@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-extend="ClientDetailsEdit">
+        <t t-jquery="input[name='vat']" t-operation="after">
+            <button class='button get_nit'><i class='fa fa-user' role="img" aria-label="Get NIT" title="Get NIT"/></button>
+        </t>
+    </t>
+</templates>
