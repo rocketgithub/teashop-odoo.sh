@@ -13,8 +13,7 @@ class ResPartner(models.Model):
         if vat:
             nit = vat.replace("-", "")
             body = '<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns0="http://tempuri.org/"><SOAP-ENV:Header/><SOAP-ENV:Body><ns0:getNIT><ns0:vNIT>{}</ns0:vNIT><ns0:Entity>{}</ns0:Entity><ns0:Requestor>{}</ns0:Requestor></ns0:getNIT></SOAP-ENV:Body></SOAP-ENV:Envelope>'.format(nit,self.env.company.vat, self.env.company.requestor_fel)
-            # body = '<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns0="http://tempuri.org/"><SOAP-ENV:Header/><SOAP-ENV:Body><ns0:getNIT><ns0:vNIT>{}</ns0:vNIT><ns0:Entity>86362569</ns0:Entity><ns0:Requestor>9C73426B-EFEF-4C03-9AC4-F0D5761560FF</ns0:Requestor></ns0:getNIT></SOAP-ENV:Body></SOAP-ENV:Envelope>'.format(
-            #     nit)
+            #body = '<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns0="http://tempuri.org/"><SOAP-ENV:Header/><SOAP-ENV:Body><ns0:getNIT><ns0:vNIT>{}</ns0:vNIT><ns0:Entity>86362569</ns0:Entity><ns0:Requestor>9C73426B-EFEF-4C03-9AC4-F0D5761560FF</ns0:Requestor></ns0:getNIT></SOAP-ENV:Body></SOAP-ENV:Envelope>'.format(nit)
             headers = {"Content-Type": "text/xml"}
             r = requests.post(
                 'https://fel.g4sdocumenta.com/ConsultaNIT/ConsultaNIT.asmx', data=body, headers=headers)
