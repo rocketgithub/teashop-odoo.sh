@@ -2,7 +2,7 @@
 <templates id="template" xml:space="preserve">
     <t t-extend="OrderReceipt">
         <t t-jquery=".pos-receipt" t-operation="replace">
-            <t t-if="widget.pos.company.id == 2">
+            <t t-if="widget.pos.company.id == 1">
             <div class="pos-receipt" style="font-size: 190%; zoom: 90%;width: 219px">
                 <t t-if="firma_fel || order.get_paymentlines().length == 0">
                 <!--<t>-->
