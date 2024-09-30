@@ -3,7 +3,7 @@
 
 {
     'name': 'POS G4S - Get NIT',
-    'version': '13.0.0.3',
+    'version': '14.0',
     'category': 'Point Of Sale',
     'summary': 'POS G4S - Get NIT',
     'description': """POS G4S - Get NIT""",
@@ -12,8 +12,8 @@
     'depends': ['fel_g4s', 'point_of_sale'],
     'data': [
         # Views
-        'views/assets.xml',
+#        'views/assets.xml',
     ],
-    'qweb': ['static/src/xml/*.xml'],
+#    'qweb': ['static/src/xml/*.xml'],
     'application': True,
 }
