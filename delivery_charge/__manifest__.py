@@ -11,7 +11,7 @@
 #        'views/assets.xml',
 #        'views/website_templates.xml',
 #        'views/delivery_charge_views.xml',
-#        'data/product_data.xml',
+        'data/product_data.xml',
     ],
     'qweb': [
 
