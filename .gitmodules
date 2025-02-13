@@ -27,3 +27,7 @@
 [submodule "teashop_gt"]
 	path = teashop_gt
 	url = git@github.com:rocketgithub/teashop_gt.git
+[submodule "kardex"]
+	path = kardex
+	url = git@github.com:aquih/kardex.git
+	branch = 17.0
